@@ -1,4 +1,4 @@
-function [x,y,z] = forward_kinematics(theta0,theta1,theta2)
+function coord = forward_kinematics(theta0,theta1,theta2)
 %肩关节中心为坐标原点
 %坐标轴满足右手定则，xz平面为旋转平面，逆时针为旋转正方向
 
@@ -20,4 +20,5 @@ function [x,y,z] = forward_kinematics(theta0,theta1,theta2)
     x = L1*s1+L2*s12;
     y = s0*(L1*c1+L2*c12);
     z = -c0*(L1*c1+L2*c12);
+    coord = [x,y,z];
 end
