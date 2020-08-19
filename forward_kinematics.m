@@ -1,8 +1,8 @@
 function coord = forward_kinematics(theta0,theta1,theta2)
 %肩关节中心为坐标原点
-%坐标轴满足右手定则，xz平面为旋转平面，逆时针为旋转正方向
+%坐标轴满足右手定则，x轴朝右，z轴朝上，逆时针为旋转正方向
 
-%l0(shoulder length) l1(upper leg length) l2(lower leg length) 
+%L0(shoulder length) L1(upper leg length) L2(lower leg length) 
 %theta0(shoulder angle) theta1(hip angle) theta2(knee angle)
 
 %     x = L1*sin(theta1)+L2*sin(theta1+theta2);
